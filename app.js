@@ -4,6 +4,7 @@ const profileRoutes = require('./routes/profile-routes');
 const passportSetup = require('./config/passport-setup');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
+const path = require('path');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 
@@ -20,7 +21,7 @@ app.use(cookieSession({
 //initialize passport
 app.use(passport.initialize());
 app.use(passport.session());
-qpp.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //connect to mongodb
 mongoose.connect(keys.mongodb.dbURI, {useNewUrlParser: true, useUnifiedTopology: true}, () => {
