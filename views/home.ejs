@@ -1,62 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjectCase.io</title>
-    <style>
-        body{
-            font-family: arial;
-            margin: 0;
-        }
-        nav{
-            background: #ff5353;
-            padding: 20px 10px;
-        }
-        nav ul{
-            max-width: 960px;
-            margin: 0 auth;
-            padding: 0;
-        }
-        nav li{
-            list-style-type: none;
-            display: inline-block;
-            margin: 0 10px 0 0;
-        }
-        nav a{
-            color: #fff;
-            font-size: 18px;
-            background: rgba(255, 255, 255, 0.2);
-            text-decoration: none;
-            padding: 10px;
-            display: block;
-        }
-        main, header{
-            max-width: 960px;
-            margin: 30px auto;
-            padding: 0 10px;
-            color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>ProjectCase</title>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <% if (user) { %>
-            <li><a href="/auth/logout">Logout</a></li>
-            <% } else { %>
-            <li><a href="/auth/login">Login</a></li>
-            <% } %>
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/profile">Profile</a></li>
-        </ul>
-    </nav>
     <header>
-        <h1>Arjun's Page</h1>
-        <h2>Homepage</h2>
+        <div class="container">
+            <nav class="flex items-center justify-between">
+                <div class="left flex-1 ">
+                    <div class="branding">
+                        ProjectCase.io
+                    </div>
+                </div>
+                <div class="right flex items-center">
+                    <a href="#">About</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact</a>
+                    <button class="btn btn-secondary">Login</button>
+                    <button class="btn btn-primary">Join</button>
+                </div>
+            </nav>
+            <div class="hero flex items-center">
+                <div class="right">
+                    <div class="quotes flex items-center">
+                        <div class="herorect ">
+                        </div>
+                        <h5 class="flex items-center"> Quotes</h5>
+                    </div>
+
+                    <h1>Tagline</h1>
+                    <p><span>its a student based demo text* </span> ipsum dolor sit amet consectetur, adipisicing elit.
+                        Quo doloribus ipsum hic beatae iure
+                        perspiciatis molestiae? Fuga amet magnam repellendus dolores pariatur.</p>
+
+                    <button class="btn2 btn-secondary">View Projects </button>
+                    <button class="btn2 btn-primary">Get Started</button>
+                </div>
+                <div class="left">
+                    <img src="./images/Hero_illustration.png" alt="">
+                </div>
+
+            </div>
+        </div>
     </header>
-    <main>
-        <p>Experimenting the OAuth in Nodejs for ProjectCase.io</p>
-    </main>
+    <section class="clas2">
+        <div class="container flex items-center ">
+            <div class="left flex-1">
+                <h3>Make ur </h3>
+                <h1>Profile</h1>
+                <h2>stupendous</h2>
+            </div>
+            <div class="right flex-1">
+                <img src="./images/profile-mockup.png" alt="">
+            </div>
+            <h4>"* Showcase your skills, make a move and Grab the Opportunitites"</h4>
+            <!-- <div class="note ">"* Showcase your skills, make a move and Grab the Opportunitites"</div> -->
+        </div>
+    </section>
+    <section class="video">
+        <div class="container">
+            <div class="section-heading">
+                Get <span>Inspired</span> from Community
+            </div>
+            <!-- <svg class="Rectangle_42">
+                <rect id="Rectangle_42" rx="0" ry="0" x="0" y="0" width="1920" height="1103">
+                </rect>
+            </svg>
+            <svg class="Rectangle_222">
+                <rect id="Rectangle_222" rx="0" ry="0" x="0" y="0" width="1920" height="1122">
+                </rect>
+            </svg> -->
+            <div>
+            </div>
+        </div>
+    </section>
+    <section class="connect">
+        <div class="container">
+            <div class="avv items-center">
+                <h3>Connect And Contribute</h3>
+                <img src="./images/world.png" alt="">
+            </div>
+            <div class="msg items-center">
+                <img src="./images/Group 23.png" alt="">
+                <h2>Build a <span>network</span> Engage with collections, contribute your own expertise
+                    & increase your <span>visibility</span> within the company.</h2>
+            </div>
+        </div>
+    </section>
+    <section class="appreciate">
+        <div class="container">
+            <div class="heading2">
+                <h4>Appreciate</h4>
+            </div>
+            <!-- <div class="cup">
+                <img src="./images/booster.png" alt=""> 
+            </div>
+        </div> -->
+
+    </section>
 </body>
+
 </html>

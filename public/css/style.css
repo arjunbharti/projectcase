@@ -1,0 +1,153 @@
+@import'utilities.css';
+:root{
+    --primary:#4A47A3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.container{
+    max-width: 1300px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+header nav{
+    margin-top: 1rem;
+}
+header nav .branding{
+    font-size: 1.5rem;
+    font-family: Poppins;
+    font-weight: 600;
+
+}
+header nav .right a{
+    color: var(--dark);
+    font-family: Montserrat;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.hero .right h1{
+    color: var(--primary);
+    font-family: Poppins;
+}
+.hero{
+    margin-top: 4rem;
+}
+.hero .right .herorect {
+    background-color: var(--primary);
+    width: 0.2rem;
+    height: 2.9rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+.hero .right h5{
+    font-family: Montserrat;
+    font-weight: 600;  
+    font-size: 2rem;
+}
+.hero .right h1{
+    font-family: Montserrat;
+    font-weight: 600;  
+    font-size: 4rem;
+    margin:1rem auto;
+}
+.hero .right p{
+    margin: auto;
+}
+.hero .right p span{
+    color:var(--dark);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.hero .left{
+    margin-top:2.5rem;
+}  
+ section{
+     padding: 6rem 0;
+ }
+ section .left h1{
+     color: var(--dark);
+     font-size: 2rem;
+     font-weight: 600
+ } 
+ section .left h2{
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+ }
+ section .left h3{
+     font-family: Montserrat;
+     font-size: 1rem;
+     font-weight: 100;
+ }
+ section .note{
+     color: var(--primary);
+     font-family:Montserrat;
+     font-size: 1rem;
+     font-weight: 400;
+     position: relative;
+     left: 600px;
+     top: 20px;  
+ }
+ .video{
+     background-color: #161616;
+ }
+ section .section-heading{
+     font-size: 2.5rem;
+     font-weight: 100;
+     font-family: Poppins;
+     color: var(--pure);
+     text-align: center;
+ }
+ section .section-heading span{
+     color: var(--primary);
+ }
+ section .connect{
+     margin: 4rem auto;
+     padding: 5rem auto;
+ }
+ section .connect .avv{
+     align-items: center;
+ }
+ section .avv h3{
+     color: var(--primary);
+     margin: 40px auto;
+     text-align: center;
+     font-size: 2.5rem;
+ }
+ section .container .msg{
+     margin: 3rem;
+ }
+ section .container .msg h2{
+     font-size: 1rem;
+     font-weight: 100;
+ }
+ section .container .msg span{
+     text-transform: uppercase;
+     color: var(--primary);
+     font-size: 1.8rem;
+     font-weight: 600;
+ }
+ .appreciate{
+     background-color: var(--primary);
+ }
+ section .heading2{
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: Poppins;
+    color: var(--pure);
+    text-align: center;
+}

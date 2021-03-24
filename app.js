@@ -20,6 +20,7 @@ app.use(cookieSession({
 //initialize passport
 app.use(passport.initialize());
 app.use(passport.session());
+qpp.use(express.static(path.join(__dirname, 'public')));
 
 //connect to mongodb
 mongoose.connect(keys.mongodb.dbURI, {useNewUrlParser: true, useUnifiedTopology: true}, () => {
